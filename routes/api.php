@@ -29,7 +29,7 @@ Route::get('/notes', 'NoteController@list');
 Route::get('/note/{id}', 'NoteController@NoteDetails');
 
 // // Criar uma anotação
-// Route::post('/note', '');
+Route::post('/note', 'NoteController@create');
 
 // // Editar uma anotação
 // Route::put('/note/{id}', '');
