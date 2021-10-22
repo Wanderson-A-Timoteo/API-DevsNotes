@@ -23,7 +23,7 @@ Route::get('/ping', function (Request $request) {
 });
 
 // //Lista as notas
-// Route::get('/notes', '');
+Route::get('/notes', 'NoteController@all');
 
 // // Detalhes de uma anotação
 // Route::get('/note/{id}', '');
