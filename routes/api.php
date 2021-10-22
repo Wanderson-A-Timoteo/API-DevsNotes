@@ -35,4 +35,4 @@ Route::post('/note', 'NoteController@create');
 Route::put('/note/{id}', 'NoteController@edit');
 
 // // Excluír uma anotação
-// Route::delete('/note/{id}', '');
+Route::delete('/note/{id}', 'NoteController@delete');

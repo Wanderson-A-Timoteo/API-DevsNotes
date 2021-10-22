@@ -93,4 +93,19 @@ class NoteController extends Controller
         }
         return $this->array;
     }
+
+    // Recebe o id da anotação que deseja excluir
+    public function delete($id)
+    {
+        // Pega a anotação
+        $note = Note::find($id);
+
+        // Se existir deleta, se não ocorre o erro "ID inexistente"
+        if ($note) {
+            $note->delete();
+        } else {
+            $this->array['error'] = 'ID inexistente';
+        }
+        return $this->array;
+    }
 }
