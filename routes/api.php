@@ -32,7 +32,7 @@ Route::get('/note/{id}', 'NoteController@NoteDetails');
 Route::post('/note', 'NoteController@create');
 
 // // Editar uma anotação
-// Route::put('/note/{id}', '');
+Route::put('/note/{id}', 'NoteController@edit');
 
 // // Excluír uma anotação
 // Route::delete('/note/{id}', '');
