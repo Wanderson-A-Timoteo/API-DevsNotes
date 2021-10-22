@@ -23,10 +23,10 @@ Route::get('/ping', function (Request $request) {
 });
 
 // //Lista as notas
-Route::get('/notes', 'NoteController@all');
+Route::get('/notes', 'NoteController@list');
 
 // // Detalhes de uma anotação
-// Route::get('/note/{id}', '');
+Route::get('/note/{id}', 'NoteController@NoteDetails');
 
 // // Criar uma anotação
 // Route::post('/note', '');
